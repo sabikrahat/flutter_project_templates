@@ -1,4 +1,4 @@
-# Flutter Kick Start Project Pattern [[Isar](https://pub.dev/packages/provider) & [Riverpod](https://docs.hivedb.dev/)]
+# Flutter Kick Start Project Pattern [[Isar](https://isar.dev/) & [Riverpod](https://riverpod.dev/)]
 
 A new Flutter project where basically show a pattern that used I follow. This pattern isn't fully made by me. I gather some ideas from various sources and seniors. After that, I merge those ideas according to my own opinion to make it more understandable to the beginner as I'm also a beginner.
 
