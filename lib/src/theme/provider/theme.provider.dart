@@ -8,6 +8,7 @@ import '../../modules/setting/provider/settings.provider.dart';
 import '../model/theme.model.dart';
 
 typedef ThemeNotifier = NotifierProvider<ThemeProvider, ThemeProfile>;
+
 final themeProvider = ThemeNotifier(ThemeProvider.new);
 
 class ThemeProvider extends Notifier<ThemeProfile> {

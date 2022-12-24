@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 const appName = 'flutter_project_templates';
+const appTitle = 'Flutter Project Templates';
 
 const mainStart = MainAxisAlignment.start;
 const mainCenter = MainAxisAlignment.center;

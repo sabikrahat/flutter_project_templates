@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart' show BuildContext, Key, Widget;
+import 'package:flutter/material.dart' show BuildContext, Widget;
 import 'package:flutter_gen/gen_l10n/app_localizations.dart'
     show AppLocalizations;
 import 'package:flutter_riverpod/flutter_riverpod.dart'

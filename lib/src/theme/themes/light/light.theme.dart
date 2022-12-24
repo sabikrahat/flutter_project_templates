@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 
 import '../themes.dart';
 
-const uiConfigLight = SystemUiOverlayStyle(
+const lightUiConfig = SystemUiOverlayStyle(
   statusBarColor: Colors.transparent,
   statusBarBrightness: Brightness.dark,
   statusBarIconBrightness: Brightness.dark,
@@ -11,17 +11,17 @@ const uiConfigLight = SystemUiOverlayStyle(
   systemNavigationBarIconBrightness: Brightness.dark,
 );
 
-const _backgroundColor = Colors.white;
-const _bodyTextColor = Color(0xFF6A81A4);
-const _titleTextColor = Color(0xFF1B3A68);
-const _unselectedColor = Color(0xFF6A81A4);
 const lightPrimaryColor = Color(0xFFF0836B);
-const _primaryLightColor = Color(0xFFFFE7E7);
 const _headLineTextColor = Color(0xFF1B3A68);
 const _iconColorSecondary = Color(0xFF6A81A4);
+const _backgroundColor = Colors.white;
+const _bodyTextColor = Color(0xFF6A81A4);
+const _unselectedColor = Color(0xFF6A81A4);
+const _titleTextColor = Color(0xFF1B3A68);
+const _primaryLightColor = Color(0xFFFFE7E7);
 const _cardBackgroundColor = Color(0xFFF2F4FA);
 const _scaffoldBackgroundColor = Color(0xFFF2F4FA);
-const _floatingActionButtonColor = Color(0xFF2FD8AF);
+const _floatingActionButtonColor = Color.fromARGB(255, 238, 123, 98);
 const _shadowColor = Color.fromARGB(100, 200, 200, 200);
 
 final lightTheme = ThemeData(
@@ -42,12 +42,13 @@ final lightTheme = ThemeData(
   backgroundColor: _backgroundColor,
   unselectedWidgetColor: _unselectedColor,
   bottomNavigationBarTheme: _bottomNavBar,
+  textSelectionTheme: _textSelectionTheme,
   secondaryHeaderColor: _primaryLightColor,
   outlinedButtonTheme: _outlinedButtonTheme,
   elevatedButtonTheme: _elevatedButtonTheme,
   indicatorColor: _floatingActionButtonColor,
-  inputDecorationTheme: _lightInputDecorationTheme,
   progressIndicatorTheme: _progressIndicatorTheme,
+  inputDecorationTheme: _lightInputDecorationTheme,
   scaffoldBackgroundColor: _scaffoldBackgroundColor,
   visualDensity: VisualDensity.adaptivePlatformDensity,
   floatingActionButtonTheme: _floatingActionButtonTheme,
@@ -58,28 +59,39 @@ final lightTheme = ThemeData(
 InputDecorationTheme _lightInputDecorationTheme = InputDecorationTheme(
   contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
   enabledBorder: OutlineInputBorder(
-    borderRadius: BorderRadius.circular(12.0),
+    borderRadius: borderRadius12,
     gapPadding: 10,
+    borderSide: const BorderSide(color: _bodyTextColor, width: 1.0),
   ),
   focusedBorder: OutlineInputBorder(
-    borderRadius: BorderRadius.circular(12.0),
+    borderRadius: borderRadius12,
     gapPadding: 10,
+    borderSide: const BorderSide(color: lightPrimaryColor, width: 1.3),
   ),
   floatingLabelStyle: const TextStyle(
     fontSize: 16,
     fontWeight: FontWeight.w600,
+    color: lightPrimaryColor,
   ),
   errorBorder: OutlineInputBorder(
-    borderRadius: BorderRadius.circular(12.0),
+    borderRadius: borderRadius12,
     gapPadding: 10,
     borderSide: const BorderSide(color: Colors.red, width: 1.3),
   ),
   focusedErrorBorder: OutlineInputBorder(
-    borderRadius: BorderRadius.circular(12.0),
+    borderRadius: borderRadius12,
     gapPadding: 10,
     borderSide: const BorderSide(color: Colors.red, width: 1.3),
   ),
+  suffixIconColor: lightPrimaryColor,
+  prefixIconColor: lightPrimaryColor,
   errorMaxLines: 3,
+);
+
+const _textSelectionTheme = TextSelectionThemeData(
+  cursorColor: lightPrimaryColor,
+  selectionColor: lightPrimaryColor,
+  selectionHandleColor: lightPrimaryColor,
 );
 
 final _snackBarTheme = SnackBarThemeData(
@@ -105,7 +117,7 @@ final _outlinedButtonTheme = OutlinedButtonThemeData(
 );
 
 final _cardTheme = CardTheme(
-  shape: roundedRectangleBorder30,
+  shape: roundedRectangleBorder12,
   shadowColor: _shadowColor,
   color: _backgroundColor,
   elevation: 0,
@@ -139,7 +151,7 @@ const _appBarTheme = AppBarTheme(
   shadowColor: _shadowColor,
   iconTheme: IconThemeData(color: _iconColorSecondary),
   color: _backgroundColor,
-  elevation: 0.0,
+  elevation: 1.5,
   titleTextStyle: TextStyle(
     color: _titleTextColor,
     fontSize: 20,

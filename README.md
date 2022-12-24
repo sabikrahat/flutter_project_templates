@@ -1,37 +1,24 @@
-# flutter_project_templates
+# Flutter Kick Start Project Pattern [[Isar](https://pub.dev/packages/provider) & [Riverpod](https://docs.hivedb.dev/)]
 
-A new Flutter project structure using isar database and riverpod state management.
+A new Flutter project where basically show a pattern that used I follow. This pattern isn't fully made by me. I gather some ideas from various sources and seniors. After that, I merge those ideas according to my own opinion to make it more understandable to the beginner as I'm also a beginner.
 
-## Getting Started
+Hope you like it.
 
-This project is a starting point for a Flutter application that follows the
-[simple app state management
-tutorial](https://flutter.dev/docs/development/data-and-backend/state-mgmt/simple).
+<br>
 
-For help getting started with Flutter development, view the
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Commands:
 
-## Assets
+- project create: ```flutter create -t skeleton -a java -i swift --org com.sabikrahat project_app```
 
-The `assets` directory houses images, fonts, and any other files you want to
-include with your application.
+- model creation: ```flutter packages pub run build_runner build --delete-conflicting-outputs```
 
-The `assets/images` directory contains [resolution-aware
-images](https://flutter.dev/docs/development/ui/assets-and-images#resolution-aware).
+## For more information:
+- [Personal Info](https://rahat.algoramming.com/)
 
-## Localization
-
-This project generates localized messages based on arb files found in
-the `lib/src/localization` directory.
-
-To support additional languages, please visit the tutorial on
-[Internationalizing Flutter
-apps](https://flutter.dev/docs/development/accessibility-and-localization/internationalization)
+<br>
 
 ## Project Structure
 ```
-
 lib
 ├─ src
 │  ├─ constants
@@ -81,17 +68,22 @@ lib
 │  │   │   └─ view
 │  │   │       └── setting.view.dart
 │  │   │
-│  │   └─ module 1....
+│  │   └─ modules....
 │  │       ├─ api
-│  │       │   └── module 1.api.dart
+│  │       │   ├── modules.api.dart
+│  │       │   └── ...
 │  │       ├─ function
-│  │       │   └── module 1.function.dart
+│  │       │   ├── modules.function.dart
+│  │       │   └── ...
 │  │       ├─ model
-│  │       │   └── module 1.model.dart
+│  │       │   ├── modules.model.dart
+│  │       │   └── ...
 │  │       ├─ provider
-│  │       │   └── module 1.provider.dart
+│  │       │   ├── modules.provider.dart
+│  │       │   └── ...
 │  │       └─ view
-│  │           └── module 1.view.dart
+│  │           ├── modules.view.dart
+│  │           └── ...
 │  │ 
 │  ├─ theme
 │  │   ├─ model

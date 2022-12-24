@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 
 import '../themes.dart';
 
-const uiConfigdark = SystemUiOverlayStyle(
+const darkUiConfig = SystemUiOverlayStyle(
   statusBarColor: Colors.transparent,
   statusBarBrightness: Brightness.light,
   statusBarIconBrightness: Brightness.light,
@@ -11,18 +11,18 @@ const uiConfigdark = SystemUiOverlayStyle(
   systemNavigationBarIconBrightness: Brightness.light,
 );
 
+const darkPrimaryColor = Colors.teal;
 const _headLineTextColor = Color(0xFF1B3A68);
 const _iconColorSecondary = Color.fromARGB(209, 0, 133, 119);
-const _shadowColor = Color.fromARGB(90, 0, 0, 0);
 const _backgroundColor = Color.fromARGB(255, 20, 20, 20);
 const _bodyTextColor = Colors.grey;
 const _unselectedColor = Colors.blueGrey;
-const darkPrimaryColor = Colors.teal;
 const _titleTextColor = Color.fromARGB(255, 200, 200, 200);
 const _primaryLightColor = Color.fromARGB(100, 0, 150, 135);
 const _cardBackgroundColor = Color.fromARGB(255, 27, 35, 58);
 const _scaffoldBackgroundColor = Color.fromARGB(255, 14, 14, 14);
 const _floatingActionButtonColor = Color.fromARGB(255, 35, 105, 122);
+const _shadowColor = Color.fromARGB(90, 0, 0, 0);
 
 final darkTheme = ThemeData(
   cardTheme: _cardTheme,
@@ -43,6 +43,7 @@ final darkTheme = ThemeData(
   unselectedWidgetColor: _unselectedColor,
   bottomNavigationBarTheme: _bottomNavBar,
   secondaryHeaderColor: _primaryLightColor,
+  textSelectionTheme: _textSelectionTheme,
   outlinedButtonTheme: _outlinedButtonTheme,
   elevatedButtonTheme: _elevatedButtonTheme,
   indicatorColor: _floatingActionButtonColor,
@@ -58,28 +59,38 @@ final darkTheme = ThemeData(
 InputDecorationTheme _darkInputDecorationTheme = InputDecorationTheme(
   contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
   enabledBorder: OutlineInputBorder(
-    borderRadius: BorderRadius.circular(12.0),
+    borderRadius: borderRadius12,
     gapPadding: 10,
+    borderSide: const BorderSide(color: _bodyTextColor, width: 1.0),
   ),
   focusedBorder: OutlineInputBorder(
-    borderRadius: BorderRadius.circular(12.0),
+    borderRadius: borderRadius12,
     gapPadding: 10,
+    borderSide: const BorderSide(color: darkPrimaryColor, width: 1.3),
   ),
   floatingLabelStyle: const TextStyle(
     fontSize: 16,
     fontWeight: FontWeight.w600,
+    color: darkPrimaryColor,
   ),
   errorBorder: OutlineInputBorder(
-    borderRadius: BorderRadius.circular(12.0),
+    borderRadius: borderRadius12,
     gapPadding: 10,
     borderSide: const BorderSide(color: Colors.red, width: 1.3),
   ),
   focusedErrorBorder: OutlineInputBorder(
-    borderRadius: BorderRadius.circular(12.0),
+    borderRadius: borderRadius12,
     gapPadding: 10,
     borderSide: const BorderSide(color: Colors.red, width: 1.3),
   ),
+  suffixIconColor: darkPrimaryColor,
+  prefixIconColor: darkPrimaryColor,
   errorMaxLines: 3,
+);
+const _textSelectionTheme = TextSelectionThemeData(
+  cursorColor: darkPrimaryColor,
+  selectionColor: darkPrimaryColor,
+  selectionHandleColor: darkPrimaryColor,
 );
 
 final _snackBarTheme = SnackBarThemeData(
@@ -105,7 +116,7 @@ final _outlinedButtonTheme = OutlinedButtonThemeData(
 );
 
 final _cardTheme = CardTheme(
-  shape: roundedRectangleBorder30,
+  shape: roundedRectangleBorder12,
   shadowColor: _shadowColor,
   color: _backgroundColor,
   elevation: 0,
@@ -142,7 +153,7 @@ const _appBarTheme = AppBarTheme(
   shadowColor: _shadowColor,
   iconTheme: IconThemeData(color: _iconColorSecondary),
   color: _backgroundColor,
-  elevation: 0.0,
+  elevation: 1.5,
   titleTextStyle: TextStyle(
     color: _titleTextColor,
     fontSize: 20,
