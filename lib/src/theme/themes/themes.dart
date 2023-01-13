@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import '../../modules/setting/model/setting.model.dart';
 
-import '../../db/isar.dart';
-import '../model/theme.model.dart';
+import '../../db/hive.dart';
+import '../../modules/setting/model/setting.model.dart';
 import 'dark/dark.theme.dart';
 import 'light/light.theme.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart'
+    show StateProvider, WidgetRef;
+
 
 const fontFamily = 'Nunito';
-
-final themeType = db.appSettings.getSync(0)?.theme ?? ThemeProfile.light;
-
-SystemUiOverlayStyle get uiConfig => themeType == ThemeProfile.light ? lightUiConfig : darkUiConfig;
 
 const Color white = Colors.white;
 const Color black = Colors.black;
@@ -28,4 +26,27 @@ final roundedRectangleBorder10 = RoundedRectangleBorder(borderRadius: borderRadi
 final roundedRectangleBorder12 = RoundedRectangleBorder(borderRadius: borderRadius12);
 final roundedRectangleBorder15 = RoundedRectangleBorder(borderRadius: borderRadius15);
 final roundedRectangleBorder30 = RoundedRectangleBorder(borderRadius: borderRadius30);
+
+
+
+Themes? get themeType => Boxes.configs
+    .get('data', defaultValue: Configs(theme: Themes.light))!
+    .theme;
+
+SystemUiOverlayStyle get uiConfig =>
+    themeType == Themes.light ? lightUiConfig : darkUiConfig;
+
+final themeConfigProvider = StateProvider<Themes>((ref) {
+  return Boxes.configs
+      .get('data', defaultValue: Configs(theme: Themes.light))!
+      .theme!;
+});
+
+Future<void> toggleTheme(WidgetRef ref) async {
+  final theme = themeType;
+  final newTheme = theme == Themes.light ? Themes.dark : Themes.light;
+  await Boxes.configs.put('data', Configs(theme: newTheme));
+  ref.read(themeConfigProvider.notifier).update((_) => newTheme);
+}
+
 

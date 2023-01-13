@@ -6,5 +6,8 @@
   "setting": "Setting",
   "@setting": {
     "description": "Setting"
-  }
+  },
+  "weAreUnderMaintenance": "We are Under Maintenance",
+  "weWillBeBackSoon": "We will be back soon!",
+  "contactWithAdmin": "Contact with Admin"
 }

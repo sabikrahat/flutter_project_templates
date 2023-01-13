@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+//
+const isMaintenanceBreak = false;
+//
+
 const appName = 'flutter_project_templates';
 const appTitle = 'Flutter Project Templates';
 

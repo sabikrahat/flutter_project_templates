@@ -1,51 +1,37 @@
-import 'dart:convert' show json;
+import 'package:hive/hive.dart';
 
-import 'package:isar/isar.dart';
+import '../../../db/hive.dart';
 
-import '../../../theme/model/theme.model.dart';
-
-part 'setting.model.ext.dart';
 part 'setting.model.g.dart';
 
-@Collection()
-class AppSetting {
-  AppSetting();
+@HiveType(typeId: HiveTypes.configs)
+class Configs extends HiveObject {
+  @HiveField(0, defaultValue: true)
+  bool? isFirstLaunch;
+  @HiveField(1, defaultValue: Themes.light)
+  Themes? theme;
+  @HiveField(2, defaultValue: Locales.english)
+  Locales? locale;
 
-  final Id id = 0;
+  Configs({
+    this.isFirstLaunch,
+    this.theme,
+    this.locale,
+  });
+}
 
-  bool firstRun = true;
+@HiveType(typeId: HiveTypes.themes)
+enum Themes {
+  @HiveField(0)
+  light,
+  @HiveField(1)
+  dark,
+}
 
-  @Enumerated(EnumType.name)
-  ThemeProfile theme = ThemeProfile.light;
-
-  String toRawJson() => json.encode(toJson());
-
-  Map<String, dynamic> toJson() => {
-        'firstRun': firstRun,
-        'theme': theme.name,
-        'id': id,
-      };
-
-  factory AppSetting.fromJson(String source) =>
-      AppSetting.fromRawJson(json.decode(source));
-
-  factory AppSetting.fromRawJson(Map<String, dynamic> json) => AppSetting()
-    ..firstRun = json['firstRun'] as bool
-    ..theme = ThemeProfile.values.firstWhere(
-      (e) => e.name == json['theme'] as String,
-      orElse: () => ThemeProfile.dark,
-    );
-
-  @override
-  String toString() => toRawJson();
-
-  @override
-  bool operator ==(Object other) {
-    if (identical(this, other)) return true;
-    return other is AppSetting && other.id == id;
-  }
-
-  @Ignore()
-  @override
-  int get hashCode => id.hashCode;
+@HiveType(typeId: HiveTypes.locales)
+enum Locales {
+  @HiveField(0)
+  english,
+  @HiveField(1)
+  bengali,
 }

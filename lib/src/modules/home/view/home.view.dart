@@ -1,16 +1,21 @@
+import 'package:beamer/beamer.dart';
 import 'package:flutter/material.dart';
-import '../../../constants/constants.dart';
 
+import '../../../app_routes.dart';
+import '../../../constants/constants.dart';
 import '../../../constants/custom.routes.dart';
 import '../../../localization/loalization.dart';
 import '../../../theme/themes/themes.dart';
 import '../../setting/view/setting.view.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart'
+    show AppLocalizations;
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
 
   @override
   Widget build(BuildContext context) {
+    t = AppLocalizations.of(context);
     return Scaffold(
       appBar: AppBar(title: const Text('Home')),
       body: Center(
@@ -31,8 +36,8 @@ class HomeView extends StatelessWidget {
                 child: ListTile(
                   title: Text(t!.setting),
                   trailing: const Icon(Icons.arrow_forward_ios),
-                  onTap: () async =>
-                      await fadePush(context, const SettingView()),
+                  onTap: () =>
+                      Beamer.of(context).beamToNamed(AppRoutes.settingsRoute),
                 ),
               ),
               const SizedBox(height: 10.0),
@@ -47,7 +52,7 @@ class HomeView extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () async => await fadePush(context, const SettingView()),
+        onPressed: () => Beamer.of(context).beamToNamed(AppRoutes.settingsRoute),
         child: const Icon(Icons.settings),
       ),
     );
