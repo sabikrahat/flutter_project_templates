@@ -1,0 +1,16 @@
+import 'package:flutter/material.dart';
+import 'package:hive_ce/hive.dart';
+
+import '../../../../core/db/hive.dart';
+import '../../../../localization/loalization.dart';
+
+part 'locale_model.g.dart';
+part 'locale_model_ext.dart';
+
+@HiveType(typeId: HiveTypes.localeProfile)
+enum LocaleProfile {
+  @HiveField(0)
+  english,
+  @HiveField(1)
+  spanish,
+}

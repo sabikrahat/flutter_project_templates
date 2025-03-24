@@ -1,0 +1,1278 @@
+{
+  "appTitle": "Smart Car",
+  "@appTitle": {
+    "description": "Smart Car"
+  },
+  "home": "Home",
+  "@home": {
+    "description": "Home"
+  },
+  "score": "Score",
+  "@score": {
+    "description": "Score"
+  },
+  "cart": "Cart",
+  "@cart": {
+    "description": "Cart"
+  },
+  "profile": "Profile",
+  "@profile": {
+    "description": "Profile"
+  },
+  "more": "More",
+  "@more": {
+    "description": "More"
+  },
+  "settings": "Settings",
+  "@settings": {
+    "description": "Settings"
+  },
+  "basic": "Basic",
+  "@basic": {
+    "description": "Basic"
+  },
+  "advanced": "Advanced",
+  "@advanced": {
+    "description": "Advanced"
+  },
+  "performanceOverlay": "Performance Overlay",
+  "@performanceOverlay": {
+    "description": "Performance Overlay"
+  },
+  "deleteDatabase": "Delete Database",
+  "@deleteDatabase": {
+    "description": "Delete Database"
+  },
+  "viewDatabase": "View Database",
+  "@viewDatabase": {
+    "description": "View Database"
+  },
+  "urlConfig": "URL Config",
+  "@urlConfig": {
+    "description": "URL Config"
+  },
+  "theme": "Theme",
+  "@theme": {
+    "description": "Theme"
+  },
+  "switchToDarkTheme": "Switch to Dark Theme",
+  "@switchToDarkTheme": {
+    "description": "Switch to Dark Theme"
+  },
+  "switchToLightTheme": "Switch to Light Theme",
+  "@switchToLightTheme": {
+    "description": "Switch to Light Theme"
+  },
+  "language": "Language",
+  "@language": {
+    "description": "Language"
+  },
+  "currency": "Currency",
+  "@currency": {
+    "description": "Currency"
+  },
+  "currencyFormat": "Currency Format",
+  "@currencyFormat": {
+    "description": "Currency Format"
+  },
+  "dateFormat": "Date Format",
+  "@dateFormat": {
+    "description": "Date Format"
+  },
+  "timeFormat": "Time Format",
+  "@timeFormat": {
+    "description": "Time Format"
+  },
+  "font": "Font",
+  "@font": {
+    "description": "Font"
+  },
+  "signout": "Signout",
+  "@signout": {
+    "description": "Signout"
+  },
+  "about": "About",
+  "@about": {
+    "description": "About"
+  },
+  "weAreUnderMaintenance": "We are Under Maintenance",
+  "@weAreUnderMaintenance": {
+    "description": "We are Under Maintenance"
+  },
+  "weWillBeBackSoon": "We will be back soon!",
+  "@weWillBeBackSoon": {
+    "description": "We will be back soon!"
+  },
+  "contactWithAdmin": "Contact with Admin",
+  "@contactWithAdmin": {
+    "description": "Contact with Admin"
+  },
+  "letsGetStarted": "Let's Get Started!",
+  "@letsGetStarted!": {
+    "description": "Let's Get Started!"
+  },
+  "letsDiveIntoYourAccount": "Let's dive into your account",
+  "@letsDiveIntoYourAccount": {
+    "description": "Let's dive into your account"
+  },
+  "continueWithGoogle": "Continue with Google",
+  "@continueWithGoogle": {
+    "description": "Continue with Google"
+  },
+  "continueWithApple": "Continue with Apple",
+  "@continueWithApple": {
+    "description": "Continue with Apple"
+  },
+  "continueWithFacebook": "Continue with Facebook",
+  "@continueWithFacebook": {
+    "description": "Continue with Facebook"
+  },
+  "continueWithTwitter": "Continue with Twitter",
+  "@continueWithTwitter": {
+    "description": "Continue with Twitter"
+  },
+  "signup": "Signup",
+  "@signup": {
+    "description": "Signup"
+  },
+  "signin": "Sign in",
+  "@signin": {
+    "description": "Signin"
+  },
+  "privacyPolicy": "Privacy Policy",
+  "@privacyPolicy": {
+    "description": "Privacy Policy"
+  },
+  "termsOfService": "Terms of Service",
+  "@termsOfService": {
+    "description": "Terms of Service"
+  },
+  "joinSmartCarToday": "Join SmartCar Today 👤",
+  "@joinSmartCarToday": {
+    "description": "Join SmartCar Today 👤"
+  },
+  "createYourAccountAndStartTrackingYourSteps": "Create your account and start tracking your steps.",
+  "@createYourAccountAndStartTrackingYourSteps": {
+    "description": "Create your account and start tracking your steps."
+  },
+  "email": "Email",
+  "@email": {
+    "description": "Email"
+  },
+  "enterYourEmailAddress": "Enter your email address",
+  "@enterYourEmailAddress": {
+    "description": "Enter your email address"
+  },
+  "emailIsRequired": "Email is required",
+  "@emailIsRequired": {
+    "description": "Email is required"
+  },
+  "invalidEmail": "Invalid email",
+  "@invalidEmail": {
+    "description": "Invalid email"
+  },
+  "invalidPhoneNumber": "Invalid phone number",
+  "@invalidPhoneNumber": {
+    "description": "Invalid phone number"
+  },
+  "password": "Password",
+  "@password": {
+    "description": "Password"
+  },
+  "enterYourPassword": "Enter your password",
+  "@enterYourPassword": {
+    "description": "Enter your password"
+  },
+  "passwordIsRequired": "Password is required",
+  "@passwordIsRequired": {
+    "description": "Password is required"
+  },
+  "passwordMustBeAtLeastSixCharacters": "Password must be at least 6 characters",
+  "@passwordMustBeAtLeastSixCharacters": {
+    "description": "Password must be at least 6 characters"
+  },
+  "iAgreeToTrackFit": "I agree to TrackFit ",
+  "@iAgreeToTrackFit": {
+    "description": "I agree to TrackFit "
+  },
+  "termsAndConditions": "Terms & Conditions",
+  "@termsAndConditions": {
+    "description": "Terms & Conditions"
+  },
+  "alreadyHaveAnAccount": "Already have an account?",
+  "@alreadyHaveAnAccount": {
+    "description": "Already have an account?"
+  },
+  "or": "or",
+  "@or": {
+    "description": "or"
+  },
+  "welcomeBack": "Welcome Back! 👋",
+  "@welcomeBack": {
+    "description": "Welcome Back! 👋"
+  },
+  "signInToContinueMonitoringYourCar": "Sign in to continue monitoring your car.",
+  "@signInToContinueMonitoringYourCar": {
+    "description": "Sign in to continue monitoring your car."
+  },
+  "rememberMe": "Remember me",
+  "@rememberMe": {
+    "description": "Remember me"
+  },
+  "forgotPassword": "Forgot Password?",
+  "@forgotPassword": {
+    "description": "Forgot Password?"
+  },
+  "forgotYourPassword": "Forgot Your Password? 🔑",
+  "@forgotYourPassword": {
+    "description": "Forgot Your Password? 🔑"
+  },
+  "enterTheEmailAssociatedWithYourTrackFitAccountBelowWellSendYouAOneTimePasscodeToResetYourPassword": "Enter the email associated with your TrackFit account below. We'll send you a one-time passcode (OTP) to reset your password.",
+  "@enterTheEmailAssociatedWithYourTrackFitAccountBelowWellSendYouAOneTimePasscodeToResetYourPassword": {
+    "description": "Enter the email associated with your TrackFit account below. We'll send you a one-time passcode (OTP) to reset your password."
+  },
+  "yourRegisteredEmail": "Your Registered Email",
+  "@yourRegisteredEmail": {
+    "description": "Your Registered Email"
+  },
+  "sendOTPCode": "Send OTP Code",
+  "@sendOTPCode": {
+    "description": "Send OTP Code"
+  },
+  "enterOTPCode": "Enter OTP Code 🔐",
+  "@enterOTPCode": {
+    "description": "Enter OTP Code 🔐"
+  },
+  "checkYourEmailInboxForAOneTimePasscodeFromTrackFitEnterTheCodeBelowToContinue": "Check your email inbox for a one-time passcode (OTP) from TrackFit. Enter the code below to continue.",
+  "@checkYourEmailInboxForAOneTimePasscodeFromTrackFitEnterTheCodeBelowToContinue": {
+    "description": "Check your email inbox for a one-time passcode (OTP) from TrackFit. Enter the code below to continue."
+  },
+  "youCanNowResendTheCode": "You can now resend the code",
+  "@youCanNowResendTheCode": {
+    "description": "You can now resend the code"
+  },
+  "youCanResendCodeInSeconds": "You can resend code in {remainingSeconds} seconds",
+  "@youCanResendCodeInSeconds": {
+    "description": "You can resend code in {remainingSeconds} seconds"
+  },
+  "resendCode": "Resend Code",
+  "@resendCode": {
+    "description": "Resend Code"
+  },
+  "saveNewPassword": "Save New Password",
+  "@saveNewPassword": {
+    "description": "Save New Password"
+  },
+  "secureYourAccount": "Secure Your Account 🔒",
+  "@secureYourAccount": {
+    "description": "Secure Your Account 🔒"
+  },
+  "chooseANewPasswordForYourTrackFitAccountMakeSureItsSecureAndEasyToRemember": "Choose a new password for your TrackFit account. Make sure it's secure and easy to remember.",
+  "@chooseANewPasswordForYourTrackFitAccountMakeSureItsSecureAndEasyToRemember": {
+    "description": "Choose a new password for your TrackFit account. Make sure it's secure and easy to remember."
+  },
+  "newPassword": "New Password",
+  "@newPassword": {
+    "description": "New Password"
+  },
+  "enterYourNewPassword": "Enter your new password",
+  "@enterYourNewPassword": {
+    "description": "Enter your new password"
+  },
+  "confirmNewPassword": "Confirm New Password",
+  "@confirmNewPassword": {
+    "description": "Confirm New Password"
+  },
+  "enterYourNewPasswordAgain": "Enter your new password again",
+  "@enterYourNewPasswordAgain": {
+    "description": "Enter your new password again"
+  },
+  "confirmPasswordIsRequired": "Confirm Password is required",
+  "@confirmPasswordIsRequired": {
+    "description": "Confirm Password is required"
+  },
+  "confirmPasswordDoesntMatch": "Confirm password doesn't match",
+  "@confirmPasswordDoesntMatch": {
+    "description": "Confirm password doesn't match"
+  },
+  "youreAllSet": "You're All Set!",
+  "@youreAllSet": {
+    "description": "You're All Set!"
+  },
+  "yourPasswordHasBeenSuccessfullyUpdated": "Your password has been successfully updated.",
+  "@yourPasswordHasBeenSuccessfullyUpdated": {
+    "description": "Your password has been successfully updated."
+  },
+  "goToHomepage": "Go to Homepage",
+  "@goToHomepage": {
+    "description": "Go to Homepage"
+  },
+  "home": "Home",
+  "@home": {
+    "description": "Home"
+  },
+  "drivingScore": "Driving Score",
+  "@drivingScore": {
+    "description": "Driving Score"
+  },
+  "time": "time",
+  "@time": {
+    "description": "time"
+  },
+  "km": "km",
+  "@km": {
+    "description": "km"
+  },
+  "kms": "kms",
+  "@kms": {
+    "description": "kms"
+  },
+  "hr": "hr",
+  "@hr": {
+    "description": "hr"
+  },
+  "hrs": "hrs",
+  "@hrs": {
+    "description": "hrs"
+  },
+  "warnings": "warnings",
+  "@warnings": {
+    "description": "warnings"
+  },
+  "trips": "Trips",
+  "@trips": {
+    "description": "Trips"
+  },
+  "thisMonth": "This Month",
+  "@thisMonth": {
+    "description": "This Month"
+  },
+  "thisWeek": "This Week",
+  "@thisWeek": {
+    "description": "This Week"
+  },
+  "track": "Track",
+  "@track": {
+    "description": "Track"
+  },
+  "report": "Report",
+  "@report": {
+    "description": "Report"
+  },
+  "totalsAllTheTime": "Totals all the time",
+  "@totalsAllTheTime": {
+    "description": "Totals all the time"
+  },
+  "statistics": "Statistics",
+  "@statistics": {
+    "description": "Statistics"
+  },
+  "distance": "Distance",
+  "@distance": {
+    "description": "Distance"
+  },
+  "distanceLower": "distance",
+  "@distanceLower": {
+    "description": "distance"
+  },
+  "timeCapital": "Time",
+  "@timeCapital": {
+    "description": "Time"
+  },
+  "history": "History",
+  "@history": {
+    "description": "History"
+  },
+  "account": "Account",
+  "@account": {
+    "description": "Account"
+  },
+  "today": "Today",
+  "@today": {
+    "description": "Today"
+  },
+  "yesterday": "Yesterday",
+  "@yesterday": {
+    "description": "Yesterday"
+  },
+  "rideDetails": "Ride Details",
+  "@rideDetails": {
+    "description": "Ride Details"
+  },
+  "minsEstimated": "{time} mins (estimated)",
+  "@minsEstimated": {
+    "description": "{time} mins (estimated)"
+  },
+  "notifications": "Notifications",
+  "@notifications": {
+    "description": "Notifications"
+  },
+  "skip": "Skip",
+  "@skip": {
+    "description": "Skip"
+  },
+  "next": "Next",
+  "@next": {
+    "description": "Next"
+  },
+  "fuelTracker": "Fuel Tracker",
+  "@fuelTracker": {
+    "description": "Fuel Tracker"
+  },
+  "preferences": "Preferences",
+  "@preferences": {
+    "description": "Preferences"
+  },
+  "personalInfo": "Personal Info",
+  "@personalInfo": {
+    "description": "Personal Info"
+  },
+  "paymentMethods": "Payment Methods",
+  "@paymentMethods": {
+    "description": "Payment Methods"
+  },
+  "billingAndSubscription": "Billing & Subscriptions",
+  "@billingAndSubscription": {
+    "description": "Billing & Subscriptions"
+  },
+  "accountAndSecurity": "Account & Security",
+  "@accountAndSecurity": {
+    "description": "Account & Security"
+  },
+  "myVehicles": "My Vehicles",
+  "@myVehicles": {
+    "description": "My Vehicles"
+  },
+  "appAppearance": "App Appearance",
+  "@appAppearance": {
+    "description": "App Appearance"
+  },
+  "dataAndAnalytics": "Data & Analytics",
+  "@dataAndAnalytics": {
+    "description": "Data & Analytics"
+  },
+  "helpAndSupport": "Help & Support",
+  "@helpAndSupport": {
+    "description": "Help & Support"
+  },
+  "logout": "Logout",
+  "@logout": {
+    "description": "Logout"
+  },
+  "areYouSureYouWantToLogout": "Are you sure you want to logout?",
+  "@areYouSureYouWantToLogout": {
+    "description": "Are you sure you want to logout?"
+  },
+  "cancel": "Cancel",
+  "@cancel": {
+    "description": "Cancel"
+  },
+  "yesLogout": "Yes, Logout",
+  "@yesLogout": {
+    "description": "Yes, Logout"
+  },
+  "addFuel": "Add Fuel",
+  "@addFuel": {
+    "description": "Add Fuel"
+  },
+  "fuelTrackerSettings": "Fuel Tracker Settings",
+  "@fuelTrackerSettings": {
+    "description": "Fuel Tracker Settings"
+  },
+  "unit": "Unit",
+  "@unit": {
+    "description": "Unit"
+  },
+  "capacity": "Capacity",
+  "@capacity": {
+    "description": "Capacity"
+  },
+  "reminder": "Reminder",
+  "@reminder": {
+    "description": "Reminder"
+  },
+  "biometricID": "Biometric ID",
+  "@biometricID": {
+    "description": "Biometric ID"
+  },
+  "faceID": "Face ID",
+  "@faceID": {
+    "description": "Face ID"
+  },
+  "smsAuthenticator": "SMS Authenticator",
+  "@smsAuthenticator": {
+    "description": "SMS Authenticator"
+  },
+  "googleAuthenticator": "Google Authenticator",
+  "@googleAuthenticator": {
+    "description": "Google Authenticator"
+  },
+  "changePassword": "Change Password",
+  "@changePassword": {
+    "description": "Change Password"
+  },
+  "deviceManagement": "Device Management",
+  "@deviceManagement": {
+    "description": "Device Management"
+  },
+  "manageYourAccountOnTheVariousDevicesYouOwn": "Manage your account on the various devices you own.",
+  "@manageYourAccountOnTheVariousDevicesYouOwn": {
+    "description": "Manage your account on the various devices you own."
+  },
+  "deactivateAccount": "Deactivate Account",
+  "@deactivateAccount": {
+    "description": "Deactivate Account"
+  },
+  "temporarilyDeactivateYourAccountEasilyReactivateWhenYouAreReady": "Temporarily deactivate your account. Easily reactivate when you are ready.",
+  "@temporarilyDeactivateYourAccountEasilyReactivateWhenYouAreReady": {
+    "description": "Temporarily deactivate your account. Easily reactivate when you are ready."
+  },
+  "deleteAccount": "Delete Account",
+  "@deleteAccount": {
+    "description": "Delete Account"
+  },
+  "permanentlyRemoveYourAccountAndDataProceedWithCaution": "Permanently remove your account and data. Proceed with caution.",
+  "@permanentlyRemoveYourAccountAndDataProceedWithCaution": {
+    "description": "Permanently remove your account and data. Proceed with caution."
+  },
+  "selectYourVehicle": "Select Your Vehicle",
+  "@selectYourVehicle": {
+    "description": "Select Your Vehicle"
+  },
+  "addNewVehicle": "Add New Vehicle",
+  "@addNewVehicle": {
+    "description": "Add New Vehicle"
+  },
+  "continueText": "Continue",
+  "@continueText": {
+    "description": "Continue"
+  },
+  "addVehicle": "Add Vehicle",
+  "@addVehicle": {
+    "description": "Add Vehicle"
+  },
+  "updateVehicle": "Update Vehicle",
+  "@updateVehicle": {
+    "description": "Update Vehicle"
+  },
+  "nameOfTheVehicle": "Name of the Vehicle *",
+  "@nameOfTheVehicle": {
+    "description": "Name of the Vehicle *"
+  },
+  "vehicleName": "Vehicle Name",
+  "@vehicleName": {
+    "description": "Vehicle Name"
+  },
+  "enterYourVehicleName": "Enter your vehicle name",
+  "@enterYourVehicleName": {
+    "description": "Enter your vehicle name"
+  },
+  "vehicleNameIsRequired": "Vehicle name is required",
+  "@vehicleNameIsRequired": {
+    "description": "Vehicle name is required"
+  },
+  "brand": "Brand *",
+  "@brand": {
+    "description": "Brand *"
+  },
+  "selectYourBrand": "Select your brand",
+  "@selectYourBrand": {
+    "description": "Select your brand"
+  },
+  "model": "Model *",
+  "@model": {
+    "description": "Model *"
+  },
+  "selectYourModel": "Select your model",
+  "@selectYourModel": {
+    "description": "Select your model"
+  },
+  "year": "Year *",
+  "@year": {
+    "description": "Year *"
+  },
+  "selectYourYear": "Select your year",
+  "@selectYourYear": {
+    "description": "Select your year"
+  },
+  "color": "Color *",
+  "@color": {
+    "description": "Color *"
+  },
+  "selectYourColor": "Select your color",
+  "@selectYourColor": {
+    "description": "Select your color"
+  },
+  "pickAColor": "Pick a color",
+  "@pickAColor": {
+    "description": "Pick a color"
+  },
+  "gotIt": "Got it",
+  "@gotIt": {
+    "description": "Got it"
+  },
+  "colorIsRequired": "Color is required",
+  "@colorIsRequired": {
+    "description": "Color is required"
+  },
+  "licensePlate": "License Plate",
+  "@licensePlate": {
+    "description": "License Plate"
+  },
+  "enterYourLicensePlate": "Enter your license plate",
+  "@enterYourLicensePlate": {
+    "description": "Enter your license plate"
+  },
+  "licensePlateIsRequired": "License plate is required",
+  "@licensePlateIsRequired": {
+    "description": "License plate is required"
+  },
+  "registrationNumber": "Registration Number *",
+  "@registrationNumber": {
+    "description": "Registration Number *"
+  },
+  "enterYourRegistrationNumber": "Enter your registration number",
+  "@enterYourRegistrationNumber": {
+    "description": "Enter your registration number"
+  },
+  "registrationNumberIsRequired": "Registration number is required",
+  "@registrationNumberIsRequired": {
+    "description": "Registration number is required"
+  },
+  "imei": "IMEI *",
+  "@imei": {
+    "description": "IMEI *"
+  },
+  "enterYourIMEI": "Enter your IMEI",
+  "@enterYourIMEI": {
+    "description": "Enter your IMEI"
+  },
+  "imeiIsRequired": "IMEI is required",
+  "@imeiIsRequired": {
+    "description": "IMEI is required"
+  },
+  "vin": "VIN *",
+  "@vin": {
+    "description": "VIN"
+  },
+  "enterYourVIN": "Enter your VIN",
+  "@enterYourVIN": {
+    "description": "Enter your VIN"
+  },
+  "appLanguage": "App Language",
+  "@appLanguage": {
+    "description": "App Language"
+  },
+  "chooseTheme": "Choose Theme",
+  "@chooseTheme": {
+    "description": "Choose Theme"
+  },
+  "ok": "Ok",
+  "@ok": {
+    "description": "Ok"
+  },
+  "dataUsage": "Data Usage",
+  "@dataUsage": {
+    "description": "Data Usage"
+  },
+  "controlHowYourDataIsUsedForAnalyticsCustomizeYourPreferences": "Control how your data is used for analytics. Customize your preferences.",
+  "@controlHowYourDataIsUsedForAnalyticsCustomizeYourPreferences": {
+    "description": "Control how your data is used for analytics. Customize your preferences."
+  },
+  "adPreferences": "Ad Preferences",
+  "@adPreferences": {
+    "description": "Ad Preferences"
+  },
+  "manageAdPersonalizationSettingsTailorYourAdExperience": "Manage ad personalization settings. Tailor your ad experience.",
+  "@manageAdPersonalizationSettingsTailorYourAdExperience": {
+    "description": "Manage ad personalization settings. Tailor your ad experience."
+  },
+  "downloadMyData": "Download My Data",
+  "@downloadMyData": {
+    "description": "Download My Data"
+  },
+  "requestACopyOfYourDataYourInformationYourControl": "Request a copy of your data. Your information, your control.",
+  "@requestACopyOfYourDataYourInformationYourControl": {
+    "description": "Request a copy of your data. Your information, your control."
+  },
+  "fullName": "Full Name",
+  "@fullName": {
+    "description": "Full Name"
+  },
+  "enterYourFullName": "Enter your full name",
+  "@enterYourFullName": {
+    "description": "Enter your full name"
+  },
+  "fullNameIsRequired": "Full name is required",
+  "@fullNameIsRequired": {
+    "description": "Full name is required"
+  },
+  "phoneNumber": "Phone Number",
+  "@phoneNumber": {
+    "description": "Phone Number"
+  },
+  "enterYourPhoneNumber": "Enter your phone number",
+  "@enterYourPhoneNumber": {
+    "description": "Enter your phone number"
+  },
+  "phoneNumberIsRequired": "Phone number is required",
+  "@phoneNumberIsRequired": {
+    "description": "Phone number is required"
+  },
+  "gender": "Gender",
+  "@gender": {
+    "description": "Gender"
+  },
+  "selectYourGender": "Select your gender",
+  "@selectYourGender": {
+    "description": "Select your gender"
+  },
+  "dateOfBirth": "Date of Birth",
+  "@dateOfBirth": {
+    "description": "Date of Birth"
+  },
+  "selectYourDateOfBirth": "Select your date of birth",
+  "@selectYourDateOfBirth": {
+    "description": "Select your date of birth"
+  },
+  "dateOfBirthIsRequired": "Date of birth is required",
+  "@dateOfBirthIsRequired": {
+    "description": "Date of birth is required"
+  },
+  "saveChanges": "Save Changes",
+  "@saveChanges": {
+    "description": "Save Changes"
+  },
+  "faq": "FAQ",
+  "@faq": {
+    "description": "FAQ"
+  },
+  "contactSupport": "Contact Support",
+  "@contactSupport": {
+    "description": "Contact Support"
+  },
+  "partner": "Partner",
+  "@partner": {
+    "description": "Partner"
+  },
+  "jobVacancy": "Job Vacancy",
+  "@jobVacancy": {
+    "description": "Job Vacancy"
+  },
+  "accessibility": "Accessibility",
+  "@accessibility": {
+    "description": "Accessibility"
+  },
+  "feedback": "Feedback",
+  "@feedback": {
+    "description": "Feedback"
+  },
+  "aboutUs": "About us",
+  "@aboutUs": {
+    "description": "About us"
+  },
+  "rateUs": "Rate us",
+  "@rateUs": {
+    "description": "Rate us"
+  },
+  "visitOurWebsite": "Visit our website",
+  "@visitOurWebsite": {
+    "description": "Visit our website"
+  },
+  "followUsOnSocialMedia": "Follow us on Social Media",
+  "@followUsOnSocialMedia": {
+    "description": "Follow us on social media"
+  },
+  "search": "Search...",
+  "@search": {
+    "description": "Search..."
+  },
+  "customerSupport": "Customer Support",
+  "@customerSupport": {
+    "description": "Customer Support"
+  },
+  "website": "Website",
+  "@website": {
+    "description": "Website"
+  },
+  "whatsapp": "Whatsapp",
+  "@whatsapp": {
+    "description": "Whatsapp"
+  },
+  "vehicleInfo": "Vehicle Info",
+  "@vehicleInfo": {
+    "description": "Vehicle Info"
+  },
+  "vehicles": "Vehicles",
+  "@vehicles": {
+    "description": "Vehicles"
+  },
+  "noTripFoundOfThisVehicle": "No trip found of this vehicle.",
+  "@noTripFoundOfThisVehicle": {
+    "description": "No trip found of this vehicle"
+  },
+  "events": "Events",
+  "@events": {
+    "description": "Events"
+  },
+  "additionalInformation": "Additional Information",
+  "@additionalInformation": {
+    "description": "Additional Information"
+  },
+  "fuelConsumption": "Fuel consumption: ",
+  "@fuelConsumption": {
+    "description": "Fuel Consumption"
+  },
+  "averageSpeed": "Average speed: ",
+  "@averageSpeed": {
+    "description": "Average Speed"
+  },
+  "tripAnalysis": "Trip Analysis",
+  "@tripAnalysis": {
+    "description": "Trip Analysis"
+  },
+  "maxSpeed": "Max Speed: ",
+  "@maxSpeed": {
+    "description": "Max Speed: "
+  },
+  "powerSourceVoltage": "Power Source Voltage: ",
+  "@powerSourceVoltage": {
+    "description": "Power Source Voltage: "
+  },
+  "myPlaces": "My Places",
+  "@myPlaces": {
+    "description": "My Places"
+  },
+  "myPlaceConfiguration": "My Place Configuration",
+  "@myPlaceConfiguration": {
+    "description": "My Place Configuration"
+  },
+  "radius": "Radius",
+  "@radius": {
+    "description": "Radius"
+  },
+  "noNotificationFound": "No notification found.",
+  "@noNotificationFound": {
+    "description": "No notification found"
+  },
+  "addPlace": "Add Place",
+  "@addPlace": {
+    "description": "Add Place"
+  },
+  "updatePlace": "Update Place",
+  "@updatePlace": {
+    "description": "Update Place"
+  },
+  "notifyMeWhenTheSelectedVehicleEntersOrLeaveThePlace": "Notify me when the selected vehicle enters or leave the place.",
+  "@notifyMeWhenTheSelectedVehicleEntersOrLeaveThePlace": {
+    "description": "Notify me when the selected vehicle enters or leave the place."
+  },
+  "aliasName": "Alias (Name)",
+  "@aliasName": {
+    "description": "Alias (Name)"
+  },
+  "enterYourAliasName": "Enter your alias name",
+  "@enterYourAliasName": {
+    "description": "Enter your alias name"
+  },
+  "aliasNameIsRequired": "Alias name is required",
+  "@aliasNameIsRequired": {
+    "description": "Alias name is required"
+  },
+  "noPlacesFound": "No places found.",
+  "@noPlacesFound": {
+    "description": "No places found."
+  },
+  "deletePlace": "Delete Place",
+  "@deletePlace": {
+    "description": "Delete Place"
+  },
+  "areYouSureYouWantToDeleteThisPlace": "Are you sure you want to delete this place?",
+  "@areYouSureYouWantToDeleteThisPlace": {
+    "description": "Are you sure you want to delete this place?"
+  },
+  "yesDelete": "Yes, Delete",
+  "@yesDelete": {
+    "description": "Yes, Delete"
+  },
+  "updatePlace": "Update Place",
+  "@updatePlace": {
+    "description": "Update Place"
+  },
+  "notifyOnEntry": "Notify on Entry",
+  "@notifyOnEntry": {
+    "description": "Notify on Entry"
+  },
+  "notifyOnExit": "Notify on Exit",
+  "@notifyOnExit": {
+    "description": "Notify on Exit"
+  },
+  "editPlace": "Edit Place",
+  "@editPlace": {
+    "description": "Edit Place"
+  },
+  "noVehicleFound": "No vehicle found.",
+  "@noVehicleFound": {
+    "description": "No vehicle found."
+  },
+  "letsStartByAddingYourFirst": "Let's start by adding your first",
+  "@letsStartByAddingYourFirst": {
+    "description": "Let's start by adding your first"
+  },
+  "car": "Car",
+  "@car": {
+    "description": "Car"
+  },
+  "vinIsRequired": "VIN is required",
+  "@vinIsRequired": {
+    "description": "VIN is required"
+  },
+  "registerAnImportantLocationToReceivePersonalizedNotifications": "Register an important location to receive personalized notifications.",
+  "@registerAnImportantLocationToReceivePersonalizedNotifications": {
+    "description": "Register an important location to receive personalized notifications."
+  },
+  "receiveNotificationsWhenYourVehicleEntersOrLeavesThisLocationRegardlessOfWhoIsDrivingIt": "Receive notifications when your vehicle enters or leaves this location, regardless of who is driving it.",
+  "@receiveNotificationsWhenYourVehicleEntersOrLeavesThisLocationRegardlessOfWhoIsDrivingIt": {
+    "description": "Receive notifications when your vehicle enters or leaves this location, regardless of who is driving it."
+  },
+  "ready": "Ready!",
+  "@ready": {
+    "description": "Ready!"
+  },
+  "yourSafetyOnEveryJourney": "Your safety on every journey.",
+  "@yourSafetyOnEveryJourney": {
+    "description": "Your safety on every journey."
+  },
+  "startNow": "Start Now",
+  "@startNow": {
+    "description": "Start Now"
+  },
+  "benefits": "Benefits:",
+  "@benefits": {
+    "description": "Benefits:"
+  },
+  "stayProtectedWhereverYouGo": "Stay protected wherever you go.",
+  "@stayProtectedWhereverYouGo": {
+    "description": "Stay protected wherever you go."
+  },
+  "easyToUnderStandInsights": "Easy to understand insights.",
+  "@easyToUnderStandInsights": {
+    "description": "Easy to understand insights."
+  },
+  "focusOnThePlacesThatMatter": "Focus on the places that matter.",
+  "@focusOnThePlacesThatMatter": {
+    "description": "Focus on the places that matter."
+  },
+  "smarterRealTimeAlerts": "Smarter, real-time alerts.",
+  "@smarterRealTimeAlerts": {
+    "description": "Smarter, real-time alerts."
+  },
+  "driveSmarterStaySafer": "Drive smarter, stay safer.",
+  "@driveSmarterStaySafer": {
+    "description": "Drive smarter, stay safer."
+  },
+  "recommendationsToImproveYourScore": "Recommendations to improve your score",
+  "@recommendationsToImproveYourScore": {
+    "description": "Recommendations to improve your score"
+  },
+  "receivePushNotifications": "Receive Push Notifications",
+  "@receivePushNotifications": {
+    "description": "Receive Push Notifications"
+  },
+  "gpsDeviceConnected": "GPS Device Connected",
+  "@gpsDeviceConnected": {
+    "description": "GPS Device Connected"
+  },
+  "gpsDeviceDisconnected": "GPS Device Disconnected",
+  "@gpsDeviceDisconnected": {
+    "description": "GPS Device Disconnected"
+  },
+  "gpsDeviceBatteryLow": "GPS Device Battery Low",
+  "@gpsDeviceBatteryLow": {
+    "description": "GPS Device Battery Low"
+  },
+  "vehicleOn": "Vehicle ON",
+  "@vehicleOn": {
+    "description": "Vehicle ON"
+  },
+  "vehicleOff": "Vehicle OFF",
+  "@vehicleOff": {
+    "description": "Vehicle OFF"
+  },
+  "idlingStarts": "Idling Starts",
+  "@idlingStarts": {
+    "description": "Idling Starts"
+  },
+  "idlingEnds": "Idling Ends",
+  "@idlingEnds": {
+    "description": "Idling Ends"
+  },
+  "enterIntoMyPlaces": "Enter into My Places",
+  "@enterIntoMyPlaces": {
+    "description": "Enter into My Places"
+  },
+  "exitFromMyPlaces": "Exit from My Places",
+  "@exitFromMyPlaces": {
+    "description": "Exit from My Places"
+  },
+  "vehicleBatteryVoltageLow": "Vehicle Battery Voltage Low",
+  "@vehicleBatteryVoltageLow": {
+    "description": "Vehicle Battery Voltage Low"
+  },
+  "harshAcceleration": "Harsh Acceleration",
+  "@harshAcceleration": {
+    "description": "Harsh Acceleration"
+  },
+  "harshBraking": "Harsh Braking",
+  "@harshBraking": {
+    "description": "Harsh Braking"
+  },
+  "accident": "Accident",
+  "@accident": {
+    "description": "Accident"
+  },
+  "mileage": "Mileage: ",
+  "@mileage": {
+    "description": "Mileage"
+  },
+  "satellites": "Satellites: ",
+  "@satellites": {
+    "description": "Satellites"
+  },
+  "all": "All",
+  "@all": {
+    "description": "All"
+  },
+  "newString": "New",
+  "@newString": {
+    "description": "New"
+  },
+  "lastUpdated": "Last updated",
+  "@lastUpdated": {
+    "description": "Last updated"
+  },
+  "ago": "ago",
+  "@ago": {
+    "description": "ago"
+  },
+  "systemDefault": "System Default",
+  "@systemDefault": {
+    "description": "System Default"
+  },
+  "light": "Light",
+  "@light": {
+    "description": "Light"
+  },
+  "dark": "Dark",
+  "@dark": {
+    "description": "Dark"
+  },
+  "directions": "Directions",
+  "@directions": {
+    "description": "Directions"
+  },
+  "bound": "Bound",
+  "@bound": {
+    "description": "Bound"
+  },
+  "alarmModeOff": "Alarm Mode OFF",
+  "@alarmModeOff": {
+    "description": "Alarm Mode OFF"
+  },
+  "alarmModeOn": "Alarm Mode ON",
+  "@alarmModeOn": {
+    "description": "Alarm Mode ON"
+  },
+  "today": "Today",
+  "@today": {
+    "description": "Today"
+  },
+  "thisWeek": "This Week",
+  "@thisWeek": {
+    "description": "This Week"
+  },
+  "thisMonth": "This Month",
+  "@thisMonth": {
+    "description": "This Month"
+  },
+  "lastMonth": "Last Month",
+  "@lastMonth": {
+    "description": "Last Month"
+  },
+  "last6Months": "Last 6 Months",
+  "@last6Months": {
+    "description": "Last 6 Months"
+  },
+  "thisYear": "This Year",
+  "@thisYear": {
+    "description": "This Year"
+  },
+  "lastYear": "Last Year",
+  "@lastYear": {
+    "description": "Last Year"
+  },
+  "allTime": "All Time",
+  "@allTime": {
+    "description": "All Time"
+  },
+  "selectLanguage": "Select Language",
+  "@selectLanguage": {
+    "description": "Select Language"
+  },
+  "locationAccessPermissionRequest": "Location Access Permission Request",
+  "@locationAccessPermissionRequest": {
+    "description": "Location Access Permission Request"
+  },
+  "toTrackYourRoutesAndProvideYouWithDetailedRouteMappingWiseifRequiresAccessToYourLocation": "To track your routes and provide you with detailed route mapping. Wiseif requires access to your location.",
+  "@toTrackYourRoutesAndProvideYouWithDetailedRouteMappingWiseifRequiresAccessToYourLocation": {
+    "description": "To track your routes and provide you with detailed route mapping. Wiseif requires access to your location."
+  },
+  "grantPermission": "Grant Permission",
+  "@grantPermission": {
+    "description": "Grant Permission"
+  },
+  "pleaseTryAgain": "Please try again!",
+  "@pleaseTryAgain": {
+    "description": "Please try again!"
+  },
+  "locationPermissionIsDenied": "Location permission is Denied",
+  "@locationPermissionIsDenied": {
+    "description": "Location permission is Denied"
+  },
+  "pleaseAcceptTheLocationPermisson": "Please accept the location permisson!",
+  "@pleaseAcceptTheLocationPermisson": {
+    "description": "Please accept the location permisson!"
+  },
+  "locationPermissionIsPermanentlyDeniedWeCannotRequestPermission": "Location permission is permanently denied, we cannot request permission.",
+  "@locationPermissionIsPermanentlyDeniedWeCannotRequestPermission": {
+    "description": "Location permission is permanently denied, we cannot request permission."
+  },
+  "success": "Success",
+  "@success": {
+    "description": "Success"
+  },
+  "notificationAccessPermissionRequest": "Notification Access Permission Request",
+  "@notificationAccessPermissionRequest": {
+    "description": "Notification Access Permission Request"
+  },
+  "toReceiveImportantNotificationsAndUpdatesWiseifRequiresAccessToYourNotifications": "To receive important notifications and updates, Wiseif requires access to your notifications.",
+  "@toReceiveImportantNotificationsAndUpdatesWiseifRequiresAccessToYourNotifications": {
+    "description": "To receive important notifications and updates, Wiseif requires access to your notifications."
+  },
+  "notificationPermissionIsDenied": "Notification permission is denied",
+  "@notificationPermissionIsDenied": {
+    "description": "Notification permission is denied"
+  },
+  "pleaseAcceptTheNotificationPermisson": "Please accept the notification permisson!",
+  "@pleaseAcceptTheNotificationPermisson": {
+    "description": "Please accept the notification permisson!"
+  },
+  "notificationPermissionIsPermanentlyDeniedWeCannotRequestPermission": "Notification permission is permanently denied, we cannot request permission.",
+  "@notificationPermissionIsPermanentlyDeniedWeCannotRequestPermission": {
+    "description": "Notification permission is permanently denied, we cannot request permission."
+  },
+  "english": "English",
+  "@english": {
+    "description": "English"
+  },
+  "spanish": "Spanish",
+  "@spanish": {
+    "description": "Spanish"
+  },
+  "gpsDeviceDisconnected": "GPS Device Disconnected",
+  "@gpsDeviceDisconnected": {
+    "description": "GPS Device Disconnected"
+  },
+  "gpsDeviceBatteryLow": "Device Battery Low",
+  "@gpsDeviceBatteryLow": {
+    "description": "Device Battery Low"
+  },
+  "overSpeedStart": "Over Speed Start",
+  "@overSpeedStart": {
+    "description": "Over Speed Start"
+  },
+  "vehicleOn": "Vehicle On",
+  "@vehicleOn": {
+    "description": "Vehicle On"
+  },
+  "vehicleOff": "Vehicle Off",
+  "@vehicleOff": {
+    "description": "Vehicle Off"
+  },
+  "idlingStart": "Idling Start",
+  "@idlingStart": {
+    "description": "Idling Start"
+  },
+  "idlingEnd": "Idling End",
+  "@idlingEnd": {
+    "description": "Idling End"
+  },
+  "signalJammerStart": "Signal Jammer Start",
+  "@signalJammerStart": {
+    "description": "Signal Jammer Start"
+  },
+  "signalJammerEnd": "Signal Jammer End",
+  "@signalJammerEnd": {
+    "description": "Signal Jammer End"
+  },
+  "gpsDeviceConnected": "GPS Device Connected",
+  "@gpsDeviceConnected": {
+    "description": "GPS Device Connected"
+  },
+  "vehiclePowerRecoverAlarm": "Vehicle Power Recover",
+  "@vehiclePowerRecoverAlarm": {
+    "description": "Vehicle Power Recover"
+  },
+  "vehiclePowerVoltageLow": "Vehicle Power Voltage Low",
+  "@vehiclePowerVoltageLow": {
+    "description": "Vehicle Power Voltage Low"
+  },
+  "overSpeedEnd": "Over Speed End",
+  "@overSpeedEnd": {
+    "description": "Over Speed End"
+  },
+  "accOnLightCollisionAlert": "Light Collision while Vehicle On",
+  "@accOnLightCollisionAlert": {
+    "description": "Light Collision Alert while Vehicle On"
+  },
+  "accOffLightCollisionAlert": "Light Collision while Vehicle Off",
+  "@accOffLightCollisionAlert": {
+    "description": "Light Collision Alert while Vehicle Off"
+  },
+  "accOnHeavyCollisionAlert": "Heavy Collision while Vehicle On",
+  "@accOnHeavyCollisionAlert": {
+    "description": "Heavy Collision Alert while Vehicle On"
+  },
+  "accOffHeavyCollisionAlert": "Heavy Collision while Vehicle Off",
+  "@accOffHeavyCollisionAlert": {
+    "description": "Heavy Collision Alert while Vehicle Off"
+  },
+  "harshAcceleration": "Harsh Acceleration",
+  "@harshAcceleration": {
+    "description": "Harsh Acceleration"
+  },
+  "harshBraking": "Harsh Braking",
+  "@harshBraking": {
+    "description": "Harsh Braking"
+  },
+  "unknown": "Unknown",
+  "@unknown": {
+    "description": "Unknown"
+  },
+  "seifScoreHistory": "SeifScore History",
+  "@seifScoreHistory": {
+    "description": "SeifScore History"
+  },
+  "notEnoughDataToCalculateTheSeifScore": "Not enough data to calculate the SeifScore.",
+  "@notEnoughDataToCalculateTheSeifScore": {
+    "description": "Not enough data to calculate the SeifScore."
+  },
+  "locationChanged": "Location Changed",
+  "@locationChanged": {
+    "description": "Location Changed"
+  },
+  "youHaveChangedTheLocationDoYouWantToUpdateTheAddress": "You have changed the location. Do you want to update the address?",
+  "@youHaveChangedTheLocationDoYouWantToUpdateTheAddress": {
+    "description": "You have changed the location. Do you want to update the address?"
+  }
+}

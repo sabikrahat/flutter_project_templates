@@ -1,0 +1,2 @@
+DEV_BASE_URL = 'http://example.com'
+PROD_BASE_URL = 'http://example.com'
