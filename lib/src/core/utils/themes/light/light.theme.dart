@@ -46,6 +46,7 @@ final lightTheme = ThemeData(
   unselectedWidgetColor: _unselectedColor,
   bottomNavigationBarTheme: _bottomNavBar,
   textSelectionTheme: _textSelectionTheme,
+  pageTransitionsTheme: pageTransitionTheme,
   secondaryHeaderColor: _primaryLightColor,
   outlinedButtonTheme: _outlinedButtonTheme,
   elevatedButtonTheme: _elevatedButtonTheme,

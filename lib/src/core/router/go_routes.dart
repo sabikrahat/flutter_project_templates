@@ -20,6 +20,7 @@ final GoRouter goRouter = GoRouter(
       path: AppRoutes.signinRoute,
       name: SigninView.name,
       builder: (_, __) => const SigninView(),
+      
     ),
     GoRoute(
       path: AppRoutes.signupRoute,

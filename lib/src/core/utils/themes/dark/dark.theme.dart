@@ -47,6 +47,7 @@ final darkTheme = ThemeData(
   bottomNavigationBarTheme: _bottomNavBar,
   secondaryHeaderColor: _primaryLightColor,
   textSelectionTheme: _textSelectionTheme,
+  pageTransitionsTheme: pageTransitionTheme,
   outlinedButtonTheme: _outlinedButtonTheme,
   elevatedButtonTheme: _elevatedButtonTheme,
   indicatorColor: _floatingActionButtonColor,
@@ -62,10 +63,7 @@ final darkTheme = ThemeData(
 
 final _chipTheme = ChipThemeData(
   backgroundColor: Colors.white,
-  labelStyle: _textTheme.bodyMedium!.copyWith(
-    color: kPrimaryColor,
-    fontWeight: FontWeight.w600,
-  ),
+  labelStyle: _textTheme.bodyMedium!.copyWith(color: kPrimaryColor, fontWeight: FontWeight.w600),
   padding: const EdgeInsets.symmetric(horizontal: 5),
   shape: roundedRectangleBorder30,
   side: BorderSide.none,
@@ -234,32 +232,16 @@ final _outlinedButtonTheme = OutlinedButtonThemeData(
 );
 
 const _textTheme = TextTheme(
-  titleSmall: TextStyle(
-    fontWeight: FontWeight.w700,
-    color: _titleTextColor,
-  ),
-  titleMedium: TextStyle(
-    fontWeight: FontWeight.w700,
-    color: _titleTextColor,
-  ),
-  titleLarge: TextStyle(
-    fontWeight: FontWeight.w700,
-    fontSize: 20.0,
-    color: _titleTextColor,
-  ),
-  labelSmall: TextStyle(
-    color: _bodyTextColor,
-    fontWeight: FontWeight.w700,
-    letterSpacing: 0.7,
-  ),
+  titleSmall: TextStyle(fontWeight: FontWeight.w700, color: _titleTextColor),
+  titleMedium: TextStyle(fontWeight: FontWeight.w700, color: _titleTextColor),
+  titleLarge: TextStyle(fontWeight: FontWeight.w700, fontSize: 20.0, color: _titleTextColor),
+  labelSmall: TextStyle(color: _bodyTextColor, fontWeight: FontWeight.w700, letterSpacing: 0.7),
   labelMedium: TextStyle(color: _bodyTextColor, fontWeight: FontWeight.w700),
   labelLarge: TextStyle(color: _bodyTextColor, fontWeight: FontWeight.w700),
   bodySmall: TextStyle(color: _bodyTextColor),
   bodyMedium: TextStyle(color: _bodyTextColor),
-  bodyLarge: TextStyle(
-      color: _bodyTextColor, fontSize: 16, fontWeight: FontWeight.w700),
-  headlineLarge:
-      TextStyle(fontWeight: FontWeight.w900, color: _headLineTextColor),
+  bodyLarge: TextStyle(color: _bodyTextColor, fontSize: 16, fontWeight: FontWeight.w700),
+  headlineLarge: TextStyle(fontWeight: FontWeight.w900, color: _headLineTextColor),
 );
 
 const _bottomNavBar = BottomNavigationBarThemeData(
@@ -268,15 +250,8 @@ const _bottomNavBar = BottomNavigationBarThemeData(
   selectedItemColor: darkPrimaryColor,
   showUnselectedLabels: true,
   elevation: 30,
-  selectedIconTheme: IconThemeData(
-    color: darkPrimaryColor,
-    size: 30,
-  ),
-  selectedLabelStyle: TextStyle(
-    fontWeight: FontWeight.w700,
-    color: darkPrimaryColor,
-    fontSize: 10,
-  ),
+  selectedIconTheme: IconThemeData(color: darkPrimaryColor, size: 30),
+  selectedLabelStyle: TextStyle(fontWeight: FontWeight.w700, color: darkPrimaryColor, fontSize: 10),
   unselectedLabelStyle: TextStyle(
     fontWeight: FontWeight.w600,
     color: _unselectedColor,
