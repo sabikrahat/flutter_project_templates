@@ -83,10 +83,6 @@
   "@timeFormat": {
     "description": "Time Format"
   },
-  "font": "Font",
-  "@font": {
-    "description": "Font"
-  },
   "signout": "Signout",
   "@signout": {
     "description": "Signout"
