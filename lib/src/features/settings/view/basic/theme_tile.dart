@@ -24,21 +24,32 @@ class ThemeTile extends ConsumerWidget {
           semanticsLabel: 'Theme',
         ),
       ),
-      title: Text(
-        t.theme,
-        style: const TextStyle(fontWeight: FontWeight.bold),
-      ),
-      subtitle: Text(
-        theme == ThemeProfile.dark ? t.switchToLightTheme : t.switchToDarkTheme,
-        style: const TextStyle(fontWeight: FontWeight.bold),
-      ),
-      trailing: Switch(
-        value: theme == ThemeProfile.dark,
-        onChanged: (_) async => ref.read(themeProvider.notifier).changeTheme(
-              theme == ThemeProfile.dark
-                  ? ThemeProfile.light
-                  : ThemeProfile.dark,
+      title: Text(t.theme, style: const TextStyle(fontWeight: FontWeight.bold)),
+      // subtitle: Text(
+      //   theme == ThemeProfile.dark ? t.switchToLightTheme : t.switchToDarkTheme,
+      //   style: const TextStyle(fontWeight: FontWeight.bold),
+      // ),
+      trailing: ToggleButtons(
+        borderRadius: BorderRadius.circular(25.0),
+        constraints: const BoxConstraints(minWidth: 48.0, minHeight: 36.0),
+        isSelected: List.generate(
+          ThemeProfile.values.length,
+          (i) => ThemeProfile.values[i] == theme,
+        ),
+        selectedColor: context.theme.primaryColor,
+        onPressed:
+            (i) async => ref.read(themeProvider.notifier).changeTheme(ThemeProfile.values[i]),
+        children: List.generate(
+          ThemeProfile.values.length,
+          (i) => Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 6.0),
+            child: SvgPicture.asset(
+              ThemeProfile.values[i].icon,
+              colorFilter: context.theme.primaryColor.toColorFilter,
+              semanticsLabel: ThemeProfile.values[i].label,
             ),
+          ),
+        ),
       ),
     );
   }

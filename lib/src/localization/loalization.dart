@@ -20,9 +20,10 @@ String onGenerateTitle(BuildContext context) =>
     AppLocalizations.of(context)!.appTitle;
 
 const supportedLocales = [
+  bnLocale,
   enLocale,
-  esLocale,
 ];
 
+
+const bnLocale = Locale('bn', 'bn_BD');
 const enLocale = Locale('en', 'en_US');
-const esLocale = Locale('es', 'ES');

@@ -10,7 +10,7 @@ part 'locale_model_ext.dart';
 @HiveType(typeId: HiveTypes.localeProfile)
 enum LocaleProfile {
   @HiveField(0)
-  english,
+  bengali,
   @HiveField(1)
-  spanish,
+  english,
 }

@@ -71,7 +71,7 @@ class SigninView extends ConsumerWidget {
                   Align(
                     alignment: Alignment.centerRight,
                     child: TextButton(
-                      onPressed: () {},
+                      onPressed: () async => await notifier.forgetPassword(context),
                       child: Text(
                         "Forgot password?",
                         style: context.text.bodyMedium?.copyWith(

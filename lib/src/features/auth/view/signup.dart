@@ -31,7 +31,7 @@ class SignupView extends ConsumerWidget {
                   Text("Sign up", style: context.text.headlineSmall),
                   const SizedBox(height: defaultPadding),
                   TextFormField(
-                    controller: notifier.emailController,
+                    controller: notifier.nameController,
                     decoration: InputDecoration(labelText: 'Name', hintText: 'Enter your name'),
                     textInputAction: TextInputAction.next,
                     keyboardType: TextInputType.text,

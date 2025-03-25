@@ -12,43 +12,16 @@ extension ThemeProfileExtension on ThemeProfile {
     }
   }
 
-  // ThemeData get theme {
-  //   switch (this) {
-  //     case ThemeProfile.system:
-  //       return darkTheme;
-  //     case ThemeProfile.light:
-  //       return lightTheme;
-  //     case ThemeProfile.dark:
-  //       return darkTheme;
-  //     default:
-  //       return lightTheme;
-  //   }
-  // }
-
-  // Color get color {
-  //   switch (this) {
-  //     case ThemeProfile.dark:
-  //       return Colors.black;
-  //     case ThemeProfile.light:
-  //       return Colors.white;
-  //     default:
-  //       return Colors.white;
-  //   }
-  // }
-
-  // SystemUiOverlayStyle get uiConfig {
-  //   switch (this) {
-  //     case ThemeProfile.dark:
-  //       return darkUiConfig;
-  //     case ThemeProfile.light:
-  //       return lightUiConfig;
-  //     default:
-  //       return lightUiConfig;
-  //   }
-  // }
-
-  // ThemeProfile get toggled =>
-  //     this == ThemeProfile.light ? ThemeProfile.dark : ThemeProfile.light;
+  String get icon {
+    switch (this) {
+      case ThemeProfile.system:
+        return 'assets/svgs/system.svg';
+      case ThemeProfile.light:
+        return 'assets/svgs/light.svg';
+      case ThemeProfile.dark:
+        return 'assets/svgs/dark.svg';
+    }
+  }
 
   bool get isSystem => this == ThemeProfile.system;
   bool get isLight => this == ThemeProfile.light;
@@ -58,15 +31,17 @@ extension ThemeProfileExtension on ThemeProfile {
   bool get isNotLight => !isLight;
   bool get isNotDark => !isDark;
 
-  bool isCoreLight(BuildContext context) => isSystem
-      ? context.isLightTheme
-      : isLight
+  bool isCoreLight(BuildContext context) =>
+      isSystem
+          ? context.isLightTheme
+          : isLight
           ? true
           : false;
 
-  bool isCoreDark(BuildContext context) => isSystem
-      ? context.isDarkTheme
-      : isDark
+  bool isCoreDark(BuildContext context) =>
+      isSystem
+          ? context.isDarkTheme
+          : isDark
           ? true
           : false;
 }

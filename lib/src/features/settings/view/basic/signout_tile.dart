@@ -1,3 +1,4 @@
+import 'package:app/src/core/router/go_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -55,7 +56,10 @@ class SignoutPopup extends StatelessWidget {
             ),
           ),
           TextButton(
-            onPressed: () async => await sl<ApiClient>().signout(),
+            onPressed: () async {
+              await sl<ApiClient>().signout();
+              goRouter.refresh();
+            },
             child: const Text('Confirm', style: TextStyle(color: Colors.red)),
           ),
         ],

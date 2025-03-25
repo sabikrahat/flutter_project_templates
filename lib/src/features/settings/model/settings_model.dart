@@ -35,41 +35,43 @@ class AppSettings extends HiveObject {
   @HiveField(6)
   ThemeProfile theme = ThemeProfile.system;
   @HiveField(7)
-  LocaleProfile locale = LocaleProfile.spanish;
+  LocaleProfile locale = LocaleProfile.english;
   @HiveField(8)
   bool isProduction = kReleaseMode;
 
   String toRawJson() => json.encode(toJson());
 
   Map<String, dynamic> toJson() => {
-        'firstRunDateTime': firstRunDateTime.toIso8601String(),
-        'performanceOverlayEnable': performanceOverlayEnable,
-        'isProduction': isProduction,
-        'dateFormat': dateFormat,
-        'timeFormat': timeFormat,
-        'fontFamily': fontFamily,
-        'locale': locale.name,
-        'firstRun': firstRun,
-        'theme': theme.label,
-      };
+    'firstRunDateTime': firstRunDateTime.toIso8601String(),
+    'performanceOverlayEnable': performanceOverlayEnable,
+    'isProduction': isProduction,
+    'dateFormat': dateFormat,
+    'timeFormat': timeFormat,
+    'fontFamily': fontFamily,
+    'locale': locale.name,
+    'firstRun': firstRun,
+    'theme': theme.label,
+  };
 
-  factory AppSettings.fromJson(String source) =>
-      AppSettings.fromRawJson(json.decode(source));
+  factory AppSettings.fromJson(String source) => AppSettings.fromRawJson(json.decode(source));
 
-  factory AppSettings.fromRawJson(Map<String, dynamic> json) => AppSettings()
-    ..firstRunDateTime = DateTime.parse(json['firstRunDateTime'] as String)
-    ..performanceOverlayEnable = json['performanceOverlayEnable'] as bool
-    ..isProduction = json['isProduction'] as bool
-    ..locale = LocaleProfile.values.firstWhere(
-        (e) => e.name == json['locale'] as String,
-        orElse: () => LocaleProfile.english)
-    ..theme = ThemeProfile.values.firstWhere(
-        (e) => e.name == json['theme'] as String,
-        orElse: () => ThemeProfile.light)
-    ..dateFormat = json['dateFormat'] as String
-    ..timeFormat = json['timeFormat'] as String
-    ..fontFamily = json['fontFamily'] as String
-    ..firstRun = json['firstRun'] as bool;
+  factory AppSettings.fromRawJson(Map<String, dynamic> json) =>
+      AppSettings()
+        ..firstRunDateTime = DateTime.parse(json['firstRunDateTime'] as String)
+        ..performanceOverlayEnable = json['performanceOverlayEnable'] as bool
+        ..isProduction = json['isProduction'] as bool
+        ..locale = LocaleProfile.values.firstWhere(
+          (e) => e.name == json['locale'] as String,
+          orElse: () => LocaleProfile.english,
+        )
+        ..theme = ThemeProfile.values.firstWhere(
+          (e) => e.name == json['theme'] as String,
+          orElse: () => ThemeProfile.light,
+        )
+        ..dateFormat = json['dateFormat'] as String
+        ..timeFormat = json['timeFormat'] as String
+        ..fontFamily = json['fontFamily'] as String
+        ..firstRun = json['firstRun'] as bool;
 
   @override
   String toString() => toRawJson();
@@ -78,8 +80,7 @@ class AppSettings extends HiveObject {
   bool operator ==(Object other) {
     if (identical(this, other)) return true;
     return other is AppSettings &&
-        other.firstRunDateTime.microsecondsSinceEpoch ==
-            firstRunDateTime.microsecondsSinceEpoch;
+        other.firstRunDateTime.microsecondsSinceEpoch == firstRunDateTime.microsecondsSinceEpoch;
   }
 
   @override

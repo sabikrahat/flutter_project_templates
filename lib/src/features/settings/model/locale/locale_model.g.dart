@@ -14,20 +14,20 @@ class LocaleProfileAdapter extends TypeAdapter<LocaleProfile> {
   LocaleProfile read(BinaryReader reader) {
     switch (reader.readByte()) {
       case 0:
-        return LocaleProfile.english;
+        return LocaleProfile.bengali;
       case 1:
-        return LocaleProfile.spanish;
-      default:
         return LocaleProfile.english;
+      default:
+        return LocaleProfile.bengali;
     }
   }
 
   @override
   void write(BinaryWriter writer, LocaleProfile obj) {
     switch (obj) {
-      case LocaleProfile.english:
+      case LocaleProfile.bengali:
         writer.writeByte(0);
-      case LocaleProfile.spanish:
+      case LocaleProfile.english:
         writer.writeByte(1);
     }
   }
