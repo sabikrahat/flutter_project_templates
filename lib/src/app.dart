@@ -1,16 +1,5 @@
-
 import 'core/router/go_routes.dart';
-import 'package:flutter/material.dart'
-    show
-        BuildContext,
-        GlobalKey,
-        Key,
-        MaterialApp,
-        MediaQuery,
-        NavigatorState,
-        TextScaler,
-        ThemeData,
-        Widget;
+import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart' show AppLocalizations;
