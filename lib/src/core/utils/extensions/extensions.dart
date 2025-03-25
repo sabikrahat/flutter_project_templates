@@ -2,9 +2,12 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:intl/intl.dart';
 import 'package:path/path.dart';
 
+import '../../../injector.dart';
+import '../../config/get_platform.dart';
 import '../../db/paths.dart';
 import '../../shared/router/custom_routes.dart';
 
@@ -14,5 +17,6 @@ part 'src/date.time.dart';
 part 'src/double.dart';
 part 'src/enum.dart';
 part 'src/file.dart';
+part 'src/go.dart';
 part 'src/iterable.dart';
 part 'src/string.dart';

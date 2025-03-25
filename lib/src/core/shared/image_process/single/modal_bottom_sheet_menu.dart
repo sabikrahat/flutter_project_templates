@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:app/src/core/utils/extensions/extensions.dart';
+import '../../../utils/extensions/extensions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:image_cropper/image_cropper.dart';

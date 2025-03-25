@@ -3,7 +3,7 @@ import 'package:hive_ce/hive.dart';
 import '../../features/settings/model/locale/locale_model.dart';
 import '../../features/settings/model/settings_model.dart';
 import '../../features/settings/model/theme/theme_model.dart';
-import '../frogbase/model/auth_store.dart';
+import '../api_client/model/auth_store.dart';
 import 'hive.dart';
 
 class HiveFuntions {

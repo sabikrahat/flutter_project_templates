@@ -1,5 +1,6 @@
 import 'dart:io' show Directory;
 
+import '../../injector.dart';
 import 'package:flutter/material.dart' show WidgetsFlutterBinding;
 import 'package:path/path.dart' show join;
 import 'package:path_provider/path_provider.dart' show getApplicationDocumentsDirectory;
@@ -7,21 +8,19 @@ import 'package:path_provider/path_provider.dart' show getApplicationDocumentsDi
 import '../config/get_platform.dart';
 import '../utils/logger/logger_helper.dart';
 
-final appDir = AppDir();
-
 Future<void> initDir() async {
-  if (pt.isWeb) return;
+  if (sl<PT>().isWeb) return;
   WidgetsFlutterBinding.ensureInitialized();
   final dir = await getApplicationDocumentsDirectory();
-  appDir.root = Directory(join(dir.path, '.algoramming'));
-  appDir.db = Directory(join(appDir.root.path, 'db'));
-  appDir.backup = Directory(join(appDir.root.path, 'backup'));
-  appDir.files = Directory(join(appDir.root.path, 'files'));
-  if (!appDir.root.existsSync()) appDir.root.createSync(recursive: true);
-  if (!appDir.db.existsSync()) appDir.db.createSync(recursive: true);
-  if (!appDir.backup.existsSync()) appDir.backup.createSync(recursive: true);
-  if (!appDir.files.existsSync()) appDir.files.createSync(recursive: true);
-  log.i('App Directory: ${appDir.root.path}');
+  sl<AppDir>().root = Directory(join(dir.path, '.algoramming'));
+  sl<AppDir>().db = Directory(join(sl<AppDir>().root.path, 'db'));
+  sl<AppDir>().backup = Directory(join(sl<AppDir>().root.path, 'backup'));
+  sl<AppDir>().files = Directory(join(sl<AppDir>().root.path, 'files'));
+  if (!sl<AppDir>().root.existsSync()) sl<AppDir>().root.createSync(recursive: true);
+  if (!sl<AppDir>().db.existsSync()) sl<AppDir>().db.createSync(recursive: true);
+  if (!sl<AppDir>().backup.existsSync()) sl<AppDir>().backup.createSync(recursive: true);
+  if (!sl<AppDir>().files.existsSync()) sl<AppDir>().files.createSync(recursive: true);
+  log.i('App Directory: ${sl<AppDir>().root.path}');
 }
 
 class AppDir {

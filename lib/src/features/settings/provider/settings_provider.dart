@@ -2,9 +2,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../core/config/constants.dart';
 import '../../../core/db/hive.dart';
-import '../../../core/db/init.dart';
 import '../../../core/utils/extensions/extensions.dart';
 import '../../../core/utils/logger/logger_helper.dart';
+import '../../../injector.dart';
 import '../model/settings_model.dart';
 
 final _settingsStream = Boxes.appSettings
@@ -19,7 +19,7 @@ final settingsProvider = AppSettingsNotifier(SettingProvider.new);
 
 class SettingProvider extends Notifier<AppSettings> {
   @override
-  AppSettings build() => ref.watch(settingsStreamProvider).value ?? appSettings;
+  AppSettings build() => ref.watch(settingsStreamProvider).value ?? sl<AppSettings>();
 
   Future<bool> changeInitSetting(AppSettings setting) async {
     log.i('First Time Run. Initializing...');

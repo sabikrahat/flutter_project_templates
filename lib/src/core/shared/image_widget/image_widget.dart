@@ -1,4 +1,5 @@
-import 'package:app/src/core/config/get_platform.dart';
+import '../../config/get_platform.dart';
+import '../../../injector.dart';
 import 'package:flutter/material.dart';
 
 import 'components/android_ios_image.dart';
@@ -12,9 +13,9 @@ class ImageWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return pt.isWeb
+    return sl<PT>().isWeb
         ? WebImage(image.bytes!)
-        : pt.isMobile
+        : sl<PT>().isMobile
         ? AndroidIOSImage(image)
         : LinuxWindowsMacOsImage(image);
   }

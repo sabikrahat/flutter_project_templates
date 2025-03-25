@@ -1,11 +1,11 @@
 import 'dart:io';
 
-import 'package:app/src/core/utils/extensions/extensions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:image_cropper/image_cropper.dart';
 import 'package:image_picker/image_picker.dart';
 
+import '../../../utils/extensions/extensions.dart';
 import '../../../utils/logger/logger_helper.dart';
 
 Future<File?> takeImageOption(

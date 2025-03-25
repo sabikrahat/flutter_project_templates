@@ -1,5 +1,3 @@
-
-
 part of '../extensions.dart';
 
 extension FileExt on File {
@@ -7,5 +5,5 @@ extension FileExt on File {
 
   String get name => path.split('/').last;
 
-  Future<File> saveToAppDir() async => await copy(join(appDir.files.path, name));
+  Future<File> saveToAppDir() async => await copy(join(sl<AppDir>().files.path, name));
 }

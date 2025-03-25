@@ -9,7 +9,9 @@ extension StringUtils on String {
 
   bool get isPortNumber => _portNumber.hasMatch(toLowerCase());
 
-  bool get isPassword => length >= 8;
+  bool get isPasswordLengthMatch => length >= 6;
+
+  bool get isUpperCaseExistPassword => _upperCasePassword.hasMatch(this);
 
   bool get isUsername => !contains(' ') && length >= 6;
 
@@ -143,3 +145,5 @@ final RegExp _ipAddressRegularExpression = RegExp(
 );
 
 final RegExp _portNumber = RegExp(r'^[0-9]{1,5}$');
+
+final RegExp _upperCasePassword = RegExp(r'^(?=.*[A-Z])');

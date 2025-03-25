@@ -1,8 +1,6 @@
 import 'package:flutter/foundation.dart' show defaultTargetPlatform, kIsWeb;
 import 'package:flutter/material.dart';
 
-late final PT pt;
-
 class PlatformInfo {
   static PT getCurrentPlatformType() {
     if (kIsWeb) {

@@ -1,6 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hive_ce_flutter/hive_flutter.dart';
 
+import '../../injector.dart';
 import '../config/constants.dart';
 import '../config/get_platform.dart';
 import '../../features/settings/model/settings_model.dart';
@@ -8,9 +9,7 @@ import '../utils/extensions/extensions.dart';
 import '../utils/logger/logger_helper.dart';
 import 'functions.dart';
 import 'hive.dart';
-import 'paths.dart' show appDir, initDir;
-
-late AppSettings appSettings;
+import 'paths.dart';
 
 Future<void> openDB() async {
   await initDir();
@@ -19,7 +18,7 @@ Future<void> openDB() async {
 
 Future<void> initHiveDB() async {
   try {
-    await Hive.initFlutter(pt.isWeb ? null : appDir.db.path);
+    await Hive.initFlutter(sl<PT>().isWeb ? null : sl<AppDir>().db.path);
     HiveFuntions.registerHiveAdepters();
     await HiveFuntions.openAllBoxes();
   } catch (e) {
@@ -29,28 +28,27 @@ Future<void> initHiveDB() async {
 }
 
 Future<void> initAppDatum() async {
-  if (Boxes.appSettings.isEmpty) await appSettingsInit();
-  appSettings = Boxes.appSettings.get(appName.toCamelWord) ?? AppSettings();
-  log.i(
-    'App Initiated with appSettings: ${appSettings.firstRunDateTime} & is First Run: ${appSettings.firstRun}',
-  );
-  listenForAppConfig();
+  if (Boxes.appSettings.isEmpty) await _appSettingsInit();
+  if (sl.isRegistered<AppSettings>()) sl.unregister<AppSettings>();
+  sl.registerSingleton<AppSettings>(Boxes.appSettings.get(appName.toCamelWord) ?? AppSettings());
+  log.i('App Initiated with appSettings: ${sl<AppSettings>().firstRunDateTime}');
+  _listenForAppConfig();
 }
 
-Future<void> appSettingsInit() async {
+Future<void> _appSettingsInit() async {
   final appSettings = AppSettings();
-  log.i(
-    'First time App Settings Initiated with ${appSettings.firstRunDateTime} & is first Run: ${appSettings.firstRun}',
-  );
+  log.i('First time App Settings Initiated with ${appSettings.firstRunDateTime}');
+  log.i('First time App Settings Initiated is first time: ${appSettings.firstRun}');
   await appSettings.saveData();
 }
 
-void listenForAppConfig() => Boxes.appSettings
-    .watch(key: appName.toCamelWord)
-    .listen((_) => appSettings = Boxes.appSettings.get(appName.toCamelWord) ?? AppSettings());
+void _listenForAppConfig() => Boxes.appSettings.watch(key: appName.toCamelWord).listen((_) {
+  if (sl.isRegistered<AppSettings>()) sl.unregister<AppSettings>();
+  sl.registerSingleton<AppSettings>(Boxes.appSettings.get(appName.toCamelWord) ?? AppSettings());
+});
 
 final appSettingStreamPd = StreamProvider<AppSettings>(
-  (ref) => Boxes.appSettings
+  (_) => Boxes.appSettings
       .watch(key: appName.toCamelWord)
       .map((event) => event.value ?? AppSettings()),
 );

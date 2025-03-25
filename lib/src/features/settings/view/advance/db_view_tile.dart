@@ -9,6 +9,7 @@ import '../../../../core/shared/animations_widget/animated_widget_shower.dart';
 import '../../../../core/shared/ksnackbar/ksnackbar.dart';
 import '../../../../core/shared/list_tile/k_list_tile.dart';
 import '../../../../core/utils/extensions/extensions.dart';
+import '../../../../injector.dart';
 import '../../../../localization/loalization.dart';
 
 class DBViewTile extends StatelessWidget {
@@ -30,7 +31,7 @@ class DBViewTile extends StatelessWidget {
       ),
       title: Text(t.viewDatabase, style: const TextStyle(fontWeight: FontWeight.bold)),
       onTap: () async {
-        if (pt.isWeb) {
+        if (sl<PT>().isWeb) {
           await showDialog(context: context, builder: (_) => const HiveDbViewWebPopup());
           return;
         }

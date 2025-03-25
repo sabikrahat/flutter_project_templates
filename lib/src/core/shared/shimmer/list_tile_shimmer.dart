@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'shimmer.dart';
+
 import '../../utils/extensions/extensions.dart';
+import 'shimmer.dart';
 
 class ShimmerListTileLoader extends StatelessWidget {
   const ShimmerListTileLoader({super.key, this.length = 10});

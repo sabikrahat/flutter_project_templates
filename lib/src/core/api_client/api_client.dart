@@ -5,18 +5,17 @@ import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:http/http.dart' as http;
 
+import '../../features/settings/model/settings_model.dart';
+import '../../injector.dart';
 import '../config/constants.dart';
 import '../config/environment.dart';
 import '../db/hive.dart';
-import '../db/init.dart';
 import '../router/go_routes.dart';
 import '../utils/extensions/extensions.dart';
 import '../utils/logger/logger_helper.dart';
 import 'enum/method.dart';
 import 'model/api_response.dart';
 import 'model/auth_store.dart';
-
-late ApiClient apiClient;
 
 final authStoreStreamPd = StreamProvider((_) => Boxes.authStores.watch(key: appName.toCamelWord));
 
@@ -70,12 +69,21 @@ class ApiClient {
       data: {'email': email, 'password': password},
       isAuthRequired: false,
     );
-    final apiResponse = ApiResponse.fromRawJson(response);
-    if (!apiResponse.success) throw apiResponse.message;
+    // final apiResponse = ApiResponse.fromRawJson(response);
+    // if (!apiResponse.success) throw apiResponse.message;
+    // authStore = AuthStore(
+    //   userId: apiResponse.data['id'],
+    //   accessToken: apiResponse.data['tokens']['access-token'],
+    //   refreshToken: apiResponse.data['tokens']['refresh-token'],
+    // );
+    //
+    // Temporary
+    //
+    final Map<String, dynamic> apiResponse = json.decode(response);
     authStore = AuthStore(
-      userId: apiResponse.data['id'],
-      accessToken: apiResponse.data['tokens']['access-token'],
-      refreshToken: apiResponse.data['tokens']['refresh-token'],
+      userId: apiResponse['id'] ?? 'abc-123-def-456-ghi-789',
+      accessToken: apiResponse['access_token'],
+      refreshToken: apiResponse['refresh_token'],
     );
     await authStore?.saveData();
   }
@@ -141,7 +149,7 @@ class ApiClient {
       'Content-Type': 'application/json',
       if (isAuthRequired) 'Authorization': 'Bearer $token',
     };
-    final url = appSettings.isProduction ? Environment.prodBaseUrl : Environment.devBaseUrl;
+    final url = sl<AppSettings>().isProduction ? Environment.prodBaseUrl : Environment.devBaseUrl;
     var request = http.Request(method.value, Uri.parse('$url/$endPoint'));
     if (data != null) request.body = json.encode(data);
     request.headers.addAll(headers);
@@ -161,7 +169,7 @@ class ApiClient {
       }
     }
     final headers = {'Authorization': 'Bearer $token'};
-    final url = appSettings.isProduction ? Environment.prodBaseUrl : Environment.devBaseUrl;
+    final url = sl<AppSettings>().isProduction ? Environment.prodBaseUrl : Environment.devBaseUrl;
     final request = http.MultipartRequest(ApiClientMethod.post.value, Uri.parse('$url/file'));
     for (final path in paths) {
       request.files.add(await http.MultipartFile.fromPath('files', path));

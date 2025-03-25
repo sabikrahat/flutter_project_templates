@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../injector.dart';
 import 'get_platform.dart';
 
 double barSize = 60.0;
@@ -10,10 +11,10 @@ const double defaultPadding = 16.0;
 const defaultDuration = Duration(milliseconds: 350);
 Duration kAnimationDuration([double t = 2.5]) => Duration(milliseconds: (t * 1000).toInt());
 
-double get topBodyPadding => pt.isDesktop ? topBarSize + barSize : topBarSize + 30.0;
+double get topBodyPadding => sl<PT>().isDesktop ? topBarSize + barSize : topBarSize + 30.0;
 
 double get bottomBodyPadding =>
-    pt.isDesktop || bottomViewPadding == 0
+    sl<PT>().isDesktop || bottomViewPadding == 0
         ? bottomBarSize + bottomViewPadding + 37
         : bottomBarSize + bottomViewPadding + 7;
 

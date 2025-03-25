@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../../../../core/frogbase/frogbase.dart';
-import '../../../../localization/loalization.dart';
+import '../../../../core/api_client/api_client.dart';
 import '../../../../core/shared/animations_widget/animated_popup.dart';
 import '../../../../core/shared/animations_widget/animated_widget_shower.dart';
 import '../../../../core/shared/list_tile/k_list_tile.dart';
 import '../../../../core/utils/extensions/extensions.dart';
+import '../../../../injector.dart';
+import '../../../../localization/loalization.dart';
 
 class SignoutTile extends StatelessWidget {
   const SignoutTile({super.key});
@@ -25,15 +26,13 @@ class SignoutTile extends StatelessWidget {
           ),
         ),
       ),
-      title: Text(
-        t.signout,
-        style: const TextStyle(fontWeight: FontWeight.bold),
-      ),
-      onTap: () async => await showDialog(
-        context: context,
-        barrierDismissible: false,
-        builder: (_) => const SignoutPopup(),
-      ),
+      title: Text(t.signout, style: const TextStyle(fontWeight: FontWeight.bold)),
+      onTap:
+          () async => await showDialog(
+            context: context,
+            barrierDismissible: false,
+            builder: (_) => const SignoutPopup(),
+          ),
     );
   }
 }
@@ -52,12 +51,11 @@ class SignoutPopup extends StatelessWidget {
             onPressed: () => Navigator.of(context).pop(),
             child: Text(
               'Cancel',
-              style: TextStyle(
-                  color: context.theme.dividerColor.withValues(alpha: 0.8)),
+              style: TextStyle(color: context.theme.dividerColor.withValues(alpha: 0.8)),
             ),
           ),
           TextButton(
-            onPressed: () async => await apiClient.signout(),
+            onPressed: () async => await sl<ApiClient>().signout(),
             child: const Text('Confirm', style: TextStyle(color: Colors.red)),
           ),
         ],

@@ -1,12 +1,11 @@
-import '../config/get_platform.dart';
-import '../../features/home/view/home.dart';
-import 'package:flutter/material.dart';
+import '../../injector.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../features/auth/view/signin.dart';
 import '../../features/auth/view/signup.dart';
+import '../../features/home/view/home.dart';
 import '../../features/settings/view/setting_view.dart';
-import '../frogbase/frogbase.dart';
+import '../api_client/api_client.dart';
 import '../shared/page_not_found/page_not_found.dart';
 import '../utils/logger/logger_helper.dart';
 import 'app_routes.dart';
@@ -20,7 +19,6 @@ final GoRouter goRouter = GoRouter(
       path: AppRoutes.signinRoute,
       name: SigninView.name,
       builder: (_, __) => const SigninView(),
-      
     ),
     GoRoute(
       path: AppRoutes.signupRoute,
@@ -35,7 +33,7 @@ final GoRouter goRouter = GoRouter(
   ],
   redirect: (context, state) {
     final path = '/${state.fullPath?.split('/').last.toLowerCase()}';
-    final loggedIn = apiClient.isLoggedIn;
+    final loggedIn = sl<ApiClient>().isLoggedIn;
     log.f('Path: $path');
 
     /// Auth
@@ -50,10 +48,3 @@ final GoRouter goRouter = GoRouter(
     return null;
   },
 );
-
-extension GoRouteExtension on BuildContext {
-  goPush<T>(String route, {Object? extra}) =>
-      pt.isWeb
-          ? GoRouter.of(this).go(route, extra: extra)
-          : GoRouter.of(this).push(route, extra: extra);
-}
