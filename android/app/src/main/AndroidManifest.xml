@@ -4,6 +4,7 @@
 
     <!-- Permissions options for the `camera` group -->
     <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <!-- Queries for activities related to specific intents -->
     <queries>
